@@ -1,0 +1,44 @@
+{
+    "tyonantajat": [
+        {
+            "nimi": "Kotkan kaupunki",
+            "maara": 3523
+        },
+        {
+            "nimi": "Kymsote",
+            "maara": 940
+        },
+        {
+            "nimi": "Steveco",
+            "maara": 888
+        },
+        {
+            "nimi": "Stora Enso",
+            "maara": 562
+        },
+        {
+            "nimi": "Sulzer Pumps",
+            "maara": 535
+        },
+        {
+            "nimi": "Osuuskauppa Ympyrä",
+            "maara": 494
+        },
+        {
+            "nimi": "Ahlstrom",
+            "maara": 326
+        },
+        {
+            "nimi": "Ekami",
+            "maara": 296
+        },
+        {
+            "nimi": "Vaasan",
+            "maara": 287
+        },
+        {
+            "nimi": "Andritz",
+            "maara": 245
+        }
+    ]
+}
