@@ -29,6 +29,20 @@ const Table = ({employers}) => {
 	)
 }
 
+const Order = ({onChange}) => {
+	return (
+		<div>
+		<label>Järjestys: </label>
+		  <select onChange={onChange}>Järjestys: 
+        	<option value="atoz">a - z</option>
+        	<option value="ztoa">z - a</option>
+        	<option value="bigfirst">suurimmasta pienimpään</option>
+			<option value="smallfirst">pienimmästä suurimpaan</option>
+		  </select>
+		</div>
+	)
+}
+
 const App = () => {
 	const [employers, setEmployers] = useState([])
 	const [sortType, setSortType] = useState('atoz');
@@ -47,7 +61,6 @@ const App = () => {
 	// sort data with the type defined in select
 	// this part would be better if i had 4 different functions and one of them would be sent
 	// as a parameter to sortArray, which would then look something like:
-
 	// const sortArray = typeFunction => {
 	// 	const sorted = [...employers].sort(typefunction(a,b))
 	// 	setEmployers(sorted);
@@ -76,12 +89,7 @@ const App = () => {
 	return (
 		<div>
 		  <h1>Kotkan suurimmat työnantajat tammikuussa 2010</h1>
-		  <select onChange={(e) => setSortType(e.target.value)}>
-        	<option value="atoz">a - z</option>
-        	<option value="ztoa">z - a</option>
-        	<option value="bigfirst">suurimmasta pienimpään</option>
-			<option value="smallfirst">pienimmästä suurimpaan</option>
-		  </select>
+		  <Order onChange={(e) => setSortType(e.target.value)}/>
 		  <Table employers={employers} />
 		</div>
 	  );
